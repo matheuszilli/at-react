@@ -1,9 +1,73 @@
-.acoes-card {
+/* styles/ListagemHoteis.css */
+
+.listagem-hoteis {
     display: flex;
-    justify-content: space-between;
-    margin-top: 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .lista-hoteis {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .card-hotel {
+    background-color: #ffffff;
+    border: 4px solid #000000;
+    padding: 20px;
+    margin: 15px;
+    width: 280px;
+    text-align: left;
+    position: relative;
+    transition: transform 0.1s;
+  }
+  
+  .card-hotel:hover {
+    transform: translate(-8px, -8px);
+    box-shadow: 8px 8px 0px #000000;
+  }
+  
+  .card-hotel img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-bottom: 4px solid #000000;
     margin-bottom: 10px;
+  }
+  
+  .card-hotel h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .card-hotel p {
+    margin-bottom: 8px;
+    font-size: 1rem;
+  }
+  
+  .acoes-card {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .acoes-card a,
+  .acoes-card button {
+    margin-bottom: 10px;
+  }
+  
+  .acoes-card button {
+    width: 100%;
+  }
+  
+  input[type="text"],
+  select {
+    width: 300px;
     padding: 10px;
-    border-top: 1px solid #e0e0e0;
-    border-bottom: 1px solid #e0e0e0;
-}
+    border: 4px solid #000000;
+    margin-bottom: 20px;
+    font-size: 1rem;
+  }
+  
+  
